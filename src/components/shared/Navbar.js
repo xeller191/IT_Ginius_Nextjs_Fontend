@@ -9,7 +9,7 @@ const Navbar = () => {
         <header className="fixed w-full py-0 bg-white shadow-md">
             <nav className="container flex flex-wrap items-center px-4 mx-auto">
                 <Link href="/">
-                    <a><img src="images/logo-main.png" alt="logo" className="w-40" /></a>
+                    <a><img src="/images/logo-main.png" alt="logo" className="w-40" /></a>
                 </Link>
                 <button className="px-3 py-2 ml-auto text-indigo-900 border-2 border-indigo-600 rounded-md hover:bg-indigo-600 hover:text-white lg:hidden">
                 <span className="block w-6 my-1 border-b-2 border-current" />
@@ -25,7 +25,7 @@ const Navbar = () => {
                 <Link href="/about">
                     <a className="block px-4 py-2 font-medium hover:text-indigo-900 lg:inline-block">เกี่ยวกับฉัน</a>
                 </Link>
-                
+
                 <Link href="/contact">
                     <a className="block px-4 py-2 font-medium hover:text-indigo-900 lg:inline-block">ติดต่อฉัน</a>
                 </Link>
@@ -40,7 +40,7 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
 
-            <div className="hidden absolute inset-x-0 top-0 p-2 transition origin-top transform md:hidden">
+            <div className="absolute inset-x-0 top-0 hidden p-2 transition origin-top transform md:hidden">
                 <div className="overflow-hidden bg-white rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
                 <div className="flex items-center justify-between px-5 pt-4">
                     <div>
@@ -68,7 +68,7 @@ const Navbar = () => {
                 </div>
                 </div>
             </div>
-            
+
         </header>
 
     )
